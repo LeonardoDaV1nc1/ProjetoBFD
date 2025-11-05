@@ -4,8 +4,11 @@ nota2 = float(input("Digite a segunda nota: "))
 
 media = (nota1 + nota2)/2
 
-if media > 5:
+if media > 7:
     print(f"{aluno} passou sua nota {media}")
 
+elif media == 7:
+    print(f"{aluno} ficou na recuperacao {media}")
+
 else:
-    print(f"{aluno} nao atingiu a media {media}")
+    print(f"{aluno} reprovou {media}")
