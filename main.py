@@ -7,7 +7,7 @@ PROXIMO_ID_PLANO = 1
 PROXIMO_ID_FUNC = 1
 
 def cadastrar_plano(nome, duracao, valor):
-    """Cria um novo plano e adiciona à lista de PLANOS."""
+    "Cria um novo plano e adiciona à lista de PLANOS."
     global PROXIMO_ID_PLANO
     
     novo_plano = {
@@ -23,7 +23,7 @@ def cadastrar_plano(nome, duracao, valor):
     return novo_plano
 
 def cadastrar_membro(nome, cpf, telefone, id_plano_contratado):
-    """Cria um novo membro e adiciona à lista de MEMBROS."""
+    "Cria um novo membro e adiciona à lista de MEMBROS."
     global PROXIMO_ID_MEMBRO
     
     novo_membro = {
@@ -42,7 +42,7 @@ def cadastrar_membro(nome, cpf, telefone, id_plano_contratado):
     return novo_membro
 
 def listar_membros():
-    """Mostra todos os membros cadastrados."""
+    "Mostra todos os membros cadastrados."
     if not MEMBROS:
         print("Nenhum membro cadastrado.")
         return
@@ -58,7 +58,7 @@ def listar_membros():
     print("-")
 
 def cadastrar_funcionario(nome, cargo, salario):
-    """Cria um novo funcionário e adiciona à lista."""
+    "Cria um novo funcionário e adiciona à lista."
     global PROXIMO_ID_FUNC
     
     novo_funcionario = {
@@ -72,7 +72,6 @@ def cadastrar_funcionario(nome, cargo, salario):
     PROXIMO_ID_FUNC += 1
     print(f"Funcionário '{nome}' ({cargo}) cadastrado com sucesso (ID: {novo_funcionario['id']}).")
     return novo_funcionario
-
 
 if __name__ == "__main__":
     print("INICIANDO SISTEMA ACADEMIA SIMPLES")
